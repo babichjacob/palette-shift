@@ -6,6 +6,7 @@ import typescript from "@rollup/plugin-typescript";
 import svelte from "rollup-plugin-svelte";
 import babel from "@rollup/plugin-babel";
 import { terser } from "rollup-plugin-terser";
+// import visualizer from "rollup-plugin-visualizer";
 import config from "sapper/config/rollup";
 import sveltePreprocess from "svelte-preprocess";
 import pkg from "./package.json";
@@ -76,6 +77,10 @@ export default {
 			!dev && terser({
 				module: true,
 			}),
+
+			// visualizer({
+			// 	open: true,
+			// }),
 		],
 
 		preserveEntrySignatures: false,

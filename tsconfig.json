@@ -2,10 +2,10 @@
 	"compilerOptions": {
 		"lib": [
 			"DOM",
-			"ES2017",
+			"ES2019",
 			"WebWorker"
 		],
-		"target": "es2017",
+		"target": "es2019",
 		"allowSyntheticDefaultImports": true,
 		"emitDecoratorMetadata": true,
 		"experimentalDecorators": true,
